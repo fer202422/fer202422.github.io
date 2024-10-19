@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA ESTUDIANTIL</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+</head>
+<body>
+
+<div id="inicio" class="container">
+    <h2>BIENVENIDO A TU AGENDA PERSONAL</h2>
+    <p class="subtitle">Organiza tus tareas, exposiciones, exámenes y proyectos de manera sencilla.</p>
+    <center><button id="iniciarBtn">Iniciar</button></center>
+</div>
+
+<div id="actividadesContainer" class="container" style="display: none;">
+    <h2>¡Transforma tu rutina con nuestras actividades!</h2>
+    <p class="subtitle">Esta agenda te permitirá organizar tus actividades diarias, gestionar tus tareas y aprovechar al máximo tu tiempo. ¡Empieza a planificar tu éxito hoy mismo!</p>
+
+    
+
+    <form id="actividadForm">
+        <label for="actividad">Tipo de actividad:</label>
+        <select id="actividad" name="actividad" required>
+            <option value="" disabled selected>Selecciona una actividad</option>
+            <option value="Tareas">Tareas</option>
+            <option value="Exposición">Exposición</option>
+            <option value="Exámenes">Exámenes</option>
+            <option value="Proyectos">Proyectos</option>
+        </select>
+
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia" required>
+            <option value="" disabled selected>Selecciona una materia</option>
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Física">Física</option>
+            <option value="Química">Química</option>
+            <option value="Historia">Historia</option>
+            <option value="Geografía">Geografía</option>
+            <option value="Lengua">Lengua</option>
+            <option value="Inglés">Inglés</option>
+            <option value="Biología">Biología</option>
+            <option value="Educación Física">Educación Física</option>
+        </select>
+
+        <label for="descripcion">Descripción de la actividad:</label>
+        <textarea id="descripcion" name="descripcion" rows="3" placeholder="Escribe los detalles de la actividad..." required></textarea>
+
+        <label for="fecha">Fecha de la actividad:</label>
+        <input type="date" id="fecha" name="fecha" required>
+       
+        <input type="submit" value="Agregar Actividad">
+    </form>
+
+    <p class="empty-message" id="emptyMessage">No hay actividades guardadas por el momento.</p>
+    <div class="table-responsive">
+        <table id="actividadesTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tipo de Actividad</th>
+                    <th>Materia</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="actividadesBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script> <!-- Enlace al JavaScript -->
+</body>
+</html>

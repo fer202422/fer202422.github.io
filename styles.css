@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #5a5759, #070be9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: #5b659e;
+    margin-bottom: 1em;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+p.subtitle {
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+    color: #4b62e2;
+}
+
+select, input[type="date"], textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #596ece;
+    border-radius: 8px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+input[type="submit"], .delete-button {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #474add;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, .delete-button:hover {
+    background-color: #4650d1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    overflow-x: auto;
+}
+
+table, th, td {
+    border: 2px solid #473dd1;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: #425dd6;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFE4E1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFDAB9;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 1em;
+}
+
+.delete-button {
+    background-color: #ec16db;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.8em;
+    }
+    p.subtitle {
+        font-size: 0.9em;
+    }
+    input[type="submit"], .delete-button {
+        font-size: 0.9em;
+    }
+    table th, table td {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    width: 100%; /* Asegurarse de que ocupe el ancho completo */
+    margin-top: 1em; /* Espaciado arriba */
+    padding: 0; /* Quitar el padding */
+}
+
+table {
+    width: 100%; /* Asegurar que la tabla ocupe el 100% del contenedor */
+    border-collapse: collapse;
+    margin: 0; /* Quitar el margen */
+}
+
+td, th {
+    max-width: 150px; /* Ajustar el ancho máximo de las celdas */
+    word-wrap: break-word; /* Permitir que el texto largo se ajuste */
+    padding: 0.5em; /* Padding en celdas, ajustar según sea necesario */
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #5a5759, #070be9);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh; /* Tomar el alto completo de la ventana */
+    text-align: center; /* Centrar el texto */
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b659e;
+    margin-bottom: 1em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    animation: glow 2s ease-in-out infinite alternate;
+
+}
+
+
+
+p.subtitle {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 0.8em 1.5em;
+    background-color: #ffb700;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4650d1;
+}
+
+/* Otros estilos que ya tienes... */
